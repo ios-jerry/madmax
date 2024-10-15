@@ -14,6 +14,17 @@
 		32B82FC32C947BDC0010F477 /* madmaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B82FC22C947BDC0010F477 /* madmaxTests.swift */; };
 		32B82FCD2C947BDC0010F477 /* madmaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B82FCC2C947BDC0010F477 /* madmaxUITests.swift */; };
 		32B82FCF2C947BDC0010F477 /* madmaxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B82FCE2C947BDC0010F477 /* madmaxUITestsLaunchTests.swift */; };
+		C8314D6C2CAEEE1C00C796DB /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8314D6B2CAEEE1C00C796DB /* WebSocket.swift */; };
+		C8314D6E2CAEF35C00C796DB /* OrderBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8314D6D2CAEF35C00C796DB /* OrderBookViewModel.swift */; };
+		C8314D702CAF0CD700C796DB /* OrderBookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8314D6F2CAF0CD700C796DB /* OrderBookRepository.swift */; };
+		C8314D722CAF0CDD00C796DB /* TradeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8314D712CAF0CDD00C796DB /* TradeRepository.swift */; };
+		C8314D742CAF0D8F00C796DB /* DefaultOrderBookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8314D732CAF0D8F00C796DB /* DefaultOrderBookRepository.swift */; };
+		C8314D762CAF0E4000C796DB /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8314D752CAF0E4000C796DB /* Error.swift */; };
+		C8314D782CAF0EAD00C796DB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8314D772CAF0EAD00C796DB /* Endpoint.swift */; };
+		C8314D7A2CAF0F9C00C796DB /* OrderBookUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8314D792CAF0F9C00C796DB /* OrderBookUseCase.swift */; };
+		C8314D7C2CAF114B00C796DB /* OrderBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8314D7B2CAF114B00C796DB /* OrderBook.swift */; };
+		C8314D7E2CAF17EF00C796DB /* OrderBookDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8314D7D2CAF17EF00C796DB /* OrderBookDTO.swift */; };
+		C8314D802CAFCA5500C796DB /* TestOrderBookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8314D7F2CAFCA5500C796DB /* TestOrderBookRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +55,17 @@
 		32B82FC82C947BDC0010F477 /* madmaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = madmaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B82FCC2C947BDC0010F477 /* madmaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = madmaxUITests.swift; sourceTree = "<group>"; };
 		32B82FCE2C947BDC0010F477 /* madmaxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = madmaxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C8314D6B2CAEEE1C00C796DB /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		C8314D6D2CAEF35C00C796DB /* OrderBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookViewModel.swift; sourceTree = "<group>"; };
+		C8314D6F2CAF0CD700C796DB /* OrderBookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookRepository.swift; sourceTree = "<group>"; };
+		C8314D712CAF0CDD00C796DB /* TradeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeRepository.swift; sourceTree = "<group>"; };
+		C8314D732CAF0D8F00C796DB /* DefaultOrderBookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultOrderBookRepository.swift; sourceTree = "<group>"; };
+		C8314D752CAF0E4000C796DB /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		C8314D772CAF0EAD00C796DB /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		C8314D792CAF0F9C00C796DB /* OrderBookUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookUseCase.swift; sourceTree = "<group>"; };
+		C8314D7B2CAF114B00C796DB /* OrderBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBook.swift; sourceTree = "<group>"; };
+		C8314D7D2CAF17EF00C796DB /* OrderBookDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookDTO.swift; sourceTree = "<group>"; };
+		C8314D7F2CAFCA5500C796DB /* TestOrderBookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOrderBookRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +116,10 @@
 		32B82FB02C947BDA0010F477 /* madmax */ = {
 			isa = PBXGroup;
 			children = (
+				C8314D6A2CAEED7300C796DB /* Network */,
+				C8314D612CAEEA6600C796DB /* Data */,
+				C8314D602CAEEA5F00C796DB /* Presentation */,
+				C8314D5F2CAEE9BC00C796DB /* Domain */,
 				32B82FB12C947BDA0010F477 /* madmaxApp.swift */,
 				32B82FB32C947BDA0010F477 /* ContentView.swift */,
 				32B82FB52C947BDC0010F477 /* Assets.xcassets */,
@@ -125,6 +151,109 @@
 				32B82FCE2C947BDC0010F477 /* madmaxUITestsLaunchTests.swift */,
 			);
 			path = madmaxUITests;
+			sourceTree = "<group>";
+		};
+		C8314D5F2CAEE9BC00C796DB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C8314D642CAEEAC000C796DB /* Repositories */,
+				C8314D632CAEEAB400C796DB /* UseCases */,
+				C8314D622CAEEAAD00C796DB /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C8314D602CAEEA5F00C796DB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C8314D692CAEED4D00C796DB /* RecentTrades */,
+				C8314D682CAEED4300C796DB /* OrderBook */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C8314D612CAEEA6600C796DB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C8314D672CAEED1100C796DB /* DTO */,
+				C8314D662CAEED0A00C796DB /* Network */,
+				C8314D652CAEEC7600C796DB /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C8314D622CAEEAAD00C796DB /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C8314D752CAF0E4000C796DB /* Error.swift */,
+				C8314D7B2CAF114B00C796DB /* OrderBook.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C8314D632CAEEAB400C796DB /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C8314D792CAF0F9C00C796DB /* OrderBookUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		C8314D642CAEEAC000C796DB /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C8314D6F2CAF0CD700C796DB /* OrderBookRepository.swift */,
+				C8314D712CAF0CDD00C796DB /* TradeRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C8314D652CAEEC7600C796DB /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C8314D732CAF0D8F00C796DB /* DefaultOrderBookRepository.swift */,
+				C8314D7F2CAFCA5500C796DB /* TestOrderBookRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C8314D662CAEED0A00C796DB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C8314D772CAF0EAD00C796DB /* Endpoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C8314D672CAEED1100C796DB /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				C8314D7D2CAF17EF00C796DB /* OrderBookDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		C8314D682CAEED4300C796DB /* OrderBook */ = {
+			isa = PBXGroup;
+			children = (
+				C8314D6D2CAEF35C00C796DB /* OrderBookViewModel.swift */,
+			);
+			path = OrderBook;
+			sourceTree = "<group>";
+		};
+		C8314D692CAEED4D00C796DB /* RecentTrades */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RecentTrades;
+			sourceTree = "<group>";
+		};
+		C8314D6A2CAEED7300C796DB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C8314D6B2CAEEE1C00C796DB /* WebSocket.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +386,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8314D802CAFCA5500C796DB /* TestOrderBookRepository.swift in Sources */,
+				C8314D762CAF0E4000C796DB /* Error.swift in Sources */,
+				C8314D782CAF0EAD00C796DB /* Endpoint.swift in Sources */,
+				C8314D7C2CAF114B00C796DB /* OrderBook.swift in Sources */,
 				32B82FB42C947BDA0010F477 /* ContentView.swift in Sources */,
+				C8314D6C2CAEEE1C00C796DB /* WebSocket.swift in Sources */,
+				C8314D722CAF0CDD00C796DB /* TradeRepository.swift in Sources */,
+				C8314D7A2CAF0F9C00C796DB /* OrderBookUseCase.swift in Sources */,
+				C8314D6E2CAEF35C00C796DB /* OrderBookViewModel.swift in Sources */,
+				C8314D742CAF0D8F00C796DB /* DefaultOrderBookRepository.swift in Sources */,
+				C8314D7E2CAF17EF00C796DB /* OrderBookDTO.swift in Sources */,
+				C8314D702CAF0CD700C796DB /* OrderBookRepository.swift in Sources */,
 				32B82FB22C947BDA0010F477 /* madmaxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

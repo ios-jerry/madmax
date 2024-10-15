@@ -8,17 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewModel: OrderBookViewModel
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button {
+                viewModel.openWebSocket()
+            } label: {
+                Text("Open WebSocket")
+            }
+            Spacer().frame(height: 50)
+            Button {
+                viewModel.closeWebSocket()
+            } label: {
+                Text("Close WebSocket")
+            }
         }
-        .padding()
+        .onAppear {
+
+        }
+        .onDisappear {
+            viewModel.closeWebSocket()
+        }
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(
+        viewModel: OrderBookViewModel(
+            useCase: OrderBookUseCase(repository: TestOrderBookRepository())
+        )
+    )
 }

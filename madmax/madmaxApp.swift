@@ -11,7 +11,11 @@ import SwiftUI
 struct madmaxApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(
+                viewModel: OrderBookViewModel(
+                    useCase: OrderBookUseCase(repository: DefaultOrderBookRepository())
+                )
+            )
         }
     }
 }
